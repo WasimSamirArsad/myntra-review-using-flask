@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra Review Scraper</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .main{
+            display: flex;
+           justify-content: center;
+            align-items: center;
+              flex-direction: column;
+              background-color: rgba(128, 0, 128, 0.578);
+              width: 50%;
+              border-radius: 3cm;
+        }
+
+        h1{
+            color: green;
+        }
+        #btn{
+            background-color: pink;
+            border: none;
+            color: red;
+            width: 88px;
+    height: 52px;
+    border-radius: 25px;
+    border: 1px solid wheat;
+
+        }
+        #btn:hover{
+            background-color:rgb(247, 166, 180);
+            border: none;
+            color: red;
+        }
+        .input{
+            display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+        }
+        .topmain{
+            display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    
+
+        }
+
+        .int{
+            
+    height: 34px;
+    width: 237px;
+    border-radius: 5px;
+    border: none;
+
+
+        }
+    </style>
+
+</head>
+<body>
+    <div class="topmain">
+    <div class="main">
+    <h1>Myntra Review Scraper</h1>
+    <form method="post">
+        <div class="input">
+        <label for="product">Search Product:</label>
+        <input class="int" type="text" name="product" required>
+        <br>
+        <label for="no_of_products">Number of Products:</label>
+        <input class="int" type="number" name="no_of_products" min="1" required>
+
+        <br>
+        <button id= "btn" type="submit">Scrape Reviews</button>
+    </form>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css') }}">   
+    <title>Scrape Results</title>
+</head>
+<body>
+    <div class="main">
+    <h1>Scraped Review Data</h1>
+    <div>
+        <h2>Data Table:</h2>
+        {{ data_html|safe }}
+    </div>
+    <div>
+        <h2>Analysis Plot:</h2>
+        <img src="{{ plot_url }}" alt="Analysis Plot">
+    </div>
+<div>
+    <h1>Pie Chart</h1>
+    <img src="{{ pie_plot_url }}" alt="Pie Chart">
+    <a href="/reset">Start New Search</a>
+</div>
+</div>
+</body>
+</html>
